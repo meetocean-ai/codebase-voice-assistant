@@ -2,17 +2,10 @@
   "name": "codebase-voice-assistant",
   "version": "0.1.0",
   "description": "Voice AI that joins your dev calls and answers questions about your codebase in real-time",
-  "author": "Artem Ustimenko",
+  "author": {
+    "name": "Artem Ustimenko",
+    "email": "artem@meetocean.ai"
+  },
   "license": "MIT",
-  "homepage": "https://github.com/meetocean-ai/codebase-voice-assistant",
-  "keywords": [
-    "voice",
-    "standup",
-    "codebase",
-    "meetings",
-    "telephony"
-  ],
-  "engines": {
-    "claude-code": ">=2.0.0"
-  }
+  "homepage": "https://github.com/meetocean-ai/codebase-voice-assistant"
 }
