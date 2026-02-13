@@ -20,7 +20,30 @@
       "repository": "https://github.com/meetocean-ai/codebase-voice-assistant",
       "license": "MIT",
       "category": "productivity",
-      "keywords": ["voice", "codebase", "standup", "meetings", "conference-call", "speech", "hands-free"]
+      "keywords": ["voice", "codebase", "standup", "meetings", "conference-call", "speech", "hands-free"],
+      "strict": false,
+      "skills": [
+        "./skills/voice-start",
+        "./skills/voice-join",
+        "./skills/voice-config",
+        "./skills/voice-status"
+      ],
+      "mcpServers": {
+        "codebase-voice": {
+          "type": "stdio",
+          "command": "${CLAUDE_PLUGIN_ROOT}/.venv/bin/python",
+          "args": ["-m", "src"],
+          "cwd": "${CLAUDE_PLUGIN_ROOT}",
+          "env": {
+            "DEEPGRAM_API_KEY": "${DEEPGRAM_API_KEY}",
+            "LIVEKIT_URL": "${LIVEKIT_URL:-}",
+            "LIVEKIT_API_KEY": "${LIVEKIT_API_KEY:-}",
+            "LIVEKIT_API_SECRET": "${LIVEKIT_API_SECRET:-}",
+            "TWILIO_ACCOUNT_SID": "${TWILIO_ACCOUNT_SID:-}",
+            "TWILIO_AUTH_TOKEN": "${TWILIO_AUTH_TOKEN:-}"
+          }
+        }
+      }
     }
   ]
 }
