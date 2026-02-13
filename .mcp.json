@@ -1,0 +1,18 @@
+{
+  "mcpServers": {
+    "codebase-voice": {
+      "type": "stdio",
+      "command": "python",
+      "args": ["-m", "src.server"],
+      "cwd": "${CLAUDE_PLUGIN_ROOT}",
+      "env": {
+        "DEEPGRAM_API_KEY": "${DEEPGRAM_API_KEY}",
+        "LIVEKIT_URL": "${LIVEKIT_URL:-}",
+        "LIVEKIT_API_KEY": "${LIVEKIT_API_KEY:-}",
+        "LIVEKIT_API_SECRET": "${LIVEKIT_API_SECRET:-}",
+        "TWILIO_ACCOUNT_SID": "${TWILIO_ACCOUNT_SID:-}",
+        "TWILIO_AUTH_TOKEN": "${TWILIO_AUTH_TOKEN:-}"
+      }
+    }
+  }
+}
