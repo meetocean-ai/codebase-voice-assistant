@@ -1,0 +1,26 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "meetocean-voice",
+  "description": "Voice AI plugin for Claude Code — talk to Claude about your codebase through your mic or join conference calls as an AI assistant",
+  "owner": {
+    "name": "MeetOcean AI",
+    "email": "artem@meetocean.ai"
+  },
+  "plugins": [
+    {
+      "name": "codebase-voice-assistant",
+      "source": "./",
+      "description": "Talk to Claude about your codebase using voice. Free local mode (mic + speakers) or Pro mode (dial into conference calls via SIP).",
+      "version": "0.1.0",
+      "author": {
+        "name": "Artem Ustimenko",
+        "email": "artem@meetocean.ai"
+      },
+      "homepage": "https://github.com/meetocean-ai/codebase-voice-assistant",
+      "repository": "https://github.com/meetocean-ai/codebase-voice-assistant",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["voice", "codebase", "standup", "meetings", "conference-call", "speech", "hands-free"]
+    }
+  ]
+}

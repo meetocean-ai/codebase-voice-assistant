@@ -4,7 +4,7 @@
   "description": "Voice AI that joins your dev calls and answers questions about your codebase in real-time",
   "author": "Artem Ustimenko",
   "license": "MIT",
-  "homepage": "https://github.com/artemustimenko/codebase-voice-assistant",
+  "homepage": "https://github.com/meetocean-ai/codebase-voice-assistant",
   "keywords": [
     "voice",
     "standup",
